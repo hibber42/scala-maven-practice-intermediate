@@ -1,5 +1,6 @@
 package org.scala.maven.practice.misc
 
+// exercise 2.1
 object FibonacciCalculator extends App {
   // fibonacci till nth using tail recursion
   def fibonacci(n: Int): Int = {
