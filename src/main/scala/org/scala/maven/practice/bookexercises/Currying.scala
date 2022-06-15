@@ -34,4 +34,15 @@ object Currying extends App {
    *  2. Returns a function that takes A & B as args and returns C
    */
   def uncurry[A, B, C](f: A => B => C): (A, B) => C = (a: A, b: B) => f(a)(b)
+
+  /**
+   * Exercise 2.5 Implement the HOF that composes two functions
+   *
+   * Compose func
+   * 1. Takes two functions as args
+   *    1.1 first arg func that takes B as an arg and returns C
+   *    1.2 2nd arg func that takes A as an arg and returns B
+   * 2. Returns a function that takes A as an arg and returns C
+   */
+  def compose[A, B, C](f: B => C, g: A => B): A => C = a => f(g(a))
 }
