@@ -1,4 +1,4 @@
-package org.scala.maven.practice
+package org.scala.maven.practice.misc
 
 import scala.io.{BufferedSource, Source}
 import scala.util.{Failure, Success, Try}

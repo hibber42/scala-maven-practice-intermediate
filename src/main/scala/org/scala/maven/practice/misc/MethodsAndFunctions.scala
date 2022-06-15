@@ -1,4 +1,4 @@
-package org.scala.maven.practice
+package org.scala.maven.practice.misc
 
 object MethodsAndFunctions extends App {
 

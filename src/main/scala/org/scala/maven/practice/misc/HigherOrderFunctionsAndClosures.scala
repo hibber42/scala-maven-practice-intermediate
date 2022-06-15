@@ -1,4 +1,4 @@
-package org.scala.maven.practice
+package org.scala.maven.practice.misc
 
 object HigherOrderFunctionsAndClosures extends App {
 
@@ -10,18 +10,18 @@ object HigherOrderFunctionsAndClosures extends App {
      *
      * note - these do not need to be defined locally within this function scope
      */
-//    val currDate = date
-//    val currRecords = records
+    //    val currDate = date
+    //    val currRecords = records
 
     // inner function
     val makeDecision = (percentDelta: Float) => {
 
-  /**
-   * notice how the date variable used in the filter predicate below has not been
-   * defined in either of the functions (makeDecision & getDecisionMaker) nor in the
-   * global scope of this object - see lines 66-72
-   */
-  val filteredRecords = records.filter(_.date == date)
+      /**
+       * notice how the date variable used in the filter predicate below has not been
+       * defined in either of the functions (makeDecision & getDecisionMaker) nor in the
+       * global scope of this object - see lines 66-72
+       */
+      val filteredRecords = records.filter(_.date == date)
       // what happens if assert fails??
       assert(filteredRecords.length == 1)
 
@@ -33,9 +33,9 @@ object HigherOrderFunctionsAndClosures extends App {
 
       // compare the move with the provided arg of percent delta and print decision
       if (percentageMove > percentDelta) {
-          println(s"Buy based on date: ${record.date}, " + s" with a percent move of: $percentageMove")
+        println(s"Buy based on date: ${record.date}, " + s" with a percent move of: $percentageMove")
       } else if (percentageMove < -percentDelta) {
-          println(s"Sell based on date: ${record.date}, " + s" with a percent move of: $percentageMove")
+        println(s"Sell based on date: ${record.date}, " + s" with a percent move of: $percentageMove")
       } else {
         println(s"No calls based on date: ${record.date}, " + s" with a percent move of: $percentageMove")
       }
