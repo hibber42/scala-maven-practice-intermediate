@@ -1,4 +1,4 @@
-package org.scala.maven.practice.misc
+package org.scala.maven.practice.bookexercises
 
 // exercise 2.1
 object FibonacciCalculator extends App {
