@@ -16,7 +16,7 @@ object Currying extends App {
    *  1. Takes one argument - which is another function that takes A & B as arguments and returns C
    *  2. Returns a result -
    *    2.1 which is another function that takes A as an argument
-   *    2.2 returns another func that takes B as an and returns C...phew
+   *      2.1.2 and returns another func that takes B as an arg and returns C...phew
    *
    * There is only one implementation for this signature (shown below after '=')
    *
